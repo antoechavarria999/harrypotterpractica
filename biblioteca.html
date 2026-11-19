@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Cabecera: codificación, adaptación a celulares, título, fuentes y estilos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Biblioteca | Harry Potter y el prisionero de Azkaban</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="js/musica.js" defer></script>
+</head>
+<body data-pagina="biblioteca">
+  <!-- Cielo animado: fondo, niebla, luna y Dementores -->
+  <div class="cielo" aria-hidden="true">
+    <div class="niebla"></div><div class="niebla n2"></div>
+    <div class="luna"></div>
+    <div class="dementor d1"></div><div class="dementor d2"></div><div class="dementor d3"></div>
+    <div class="dementor d4"></div><div class="dementor d5"></div>
+  </div>
+
+  <!-- Música de fondo (sin controles nativos) y botón de control -->
+  <audio id="musica" src="audio/musica.mp3" loop preload="auto"></audio>
+  <button type="button" id="btn-musica" class="btn-musica" aria-label="Silenciar música">Silenciar música</button>
+
+  <!-- Contenedor principal -->
+  <div class="contenedor" id="contenido">
+    <h1>La Biblioteca</h1>
+    <!-- Imagen de portada -->
+    <img class="portada" src="imagenes/harry-potter-prisionero-azkaban.jpg" width="640" height="480"
+         alt="Hermione, Ron y Harry asomados a una ventana de madera con vidrios emplomados, en Harry Potter y el prisionero de Azkaban">
+    <h2>El libro de Azkaban</h2>
+    <p>Entre los estantes polvorientos, Hermione encuentra un libro sobre Sirius Black, encerrado en Azkaban por sus delitos. La tapa está fría. Las páginas huelen a humedad.</p>
+    <h2>Primera decisión</h2>
+    <p class="opcion"><a href="biblioteca.html">Se asusta y deja el libro donde estaba</a></p>
+    <p class="opcion"><a href="biblioteca.html#segunda-decision">Lo toma y se lo muestra a Harry y Ron para saber qué opinan</a></p>
+    <p class="opcion"><a href="index.html">Volver al nodo anterior</a></p>
+    <section class="nivel3" id="segunda-decision">
+      <h2>Segunda decisión</h2>
+      <p>Harry y Ron miran la tapa. Afuera, el viento golpea los vitrales. Hermione espera una respuesta.</p>
+      <p class="opcion"><a href="biblioteca.html">Ambos la ignoran: no hay de qué preocuparse, los Dementores cuidan el castillo y no dejarán que Sirius Black se acerque, porque lo odian</a></p>
+      <p class="opcion"><a href="final-libre.html">Ambos la escuchan atentamente, empiezan a investigar y descubren que Sirius Black, padrino de Harry, entregó a sus padres a Lord Voldemort</a></p>
+    </section>
+    <!-- Firma -->
+    <footer>
+      <p>Hecho por ECHAVARRÍA ANTONELLA</p>
+      <p><a href="https://www.instagram.com/antoo_echavarria/" target="_blank" rel="noopener noreferrer">Instagram: antoo_echavarria</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Cabecera: codificación, adaptación a celulares, título, fuentes y estilos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final: El miedo | Harry Potter y el prisionero de Azkaban</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="js/musica.js" defer></script>
+</head>
+<body data-pagina="final-cerrado">
+  <!-- Cielo animado: fondo, niebla, luna y Dementores -->
+  <div class="cielo" aria-hidden="true">
+    <div class="niebla"></div><div class="niebla n2"></div>
+    <div class="luna"></div>
+    <div class="dementor d1"></div><div class="dementor d2"></div><div class="dementor d3"></div>
+    <div class="dementor d4"></div><div class="dementor d5"></div>
+  </div>
+
+  <!-- Música de fondo (sin controles nativos) y botón de control -->
+  <audio id="musica" src="audio/musica.mp3" loop preload="auto"></audio>
+  <button type="button" id="btn-musica" class="btn-musica" aria-label="Silenciar música">Silenciar música</button>
+
+  <!-- Contenedor principal -->
+  <div class="contenedor" id="contenido">
+    <h1>Final: El miedo</h1>
+    <!-- Imagen de portada -->
+    <img class="portada" src="imagenes/harry-potter-prisionero-azkaban.jpg" width="640" height="480"
+         alt="Hermione, Ron y Harry asomados a una ventana de madera con vidrios emplomados, en Harry Potter y el prisionero de Azkaban">
+    <h2>Sin respuestas</h2>
+    <p>Neville cuenta que está aterrado. Los Dementores succionan el alma y se llevan la felicidad de quien se acerca. Habla bajo, como si pudieran oírlo.</p>
+    <p>Nadie sabe por qué están ahí ni a quién buscan. El fuego se apaga de a poco. Hermione siente un frío que no viene de ninguna ventana.</p>
+    <p>Esa noche nadie duerme. La pregunta queda flotando en la oscuridad, sin respuesta.</p>
+    <h2>Fin</h2>
+    <p class="opcion"><a href="index.html">Volver a empezar</a></p>
+    <!-- Firma -->
+    <footer>
+      <p>Hecho por ECHAVARRÍA ANTONELLA</p>
+      <p><a href="https://www.instagram.com/antoo_echavarria/" target="_blank" rel="noopener noreferrer">Instagram: antoo_echavarria</a></p>
+    </footer>
+  </div>
+</body>
+</html>
